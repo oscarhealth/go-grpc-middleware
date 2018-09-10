@@ -25,7 +25,7 @@ const (
 )
 
 var (
-	grpcTag = opentracing.Tag{string(ext.Component), "gRPC"}
+	grpcTag = opentracing.Tag{Key: string(ext.Component), Value: "gRPC"}
 )
 
 // UnaryServerInterceptor returns a new unary server interceptor for OpenTracing.
